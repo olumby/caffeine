@@ -10,7 +10,9 @@ gulp.task('less', function() {
 		.pipe(less())
 		.pipe(autoprefixer())
 		.pipe(gulp.dest(''))
-		.pipe(rename({suffix: '.min'}))
+		.pipe(rename({
+			suffix: '.min'
+		}))
 		.pipe(minifycss())
 		.pipe(gulp.dest(''))
 		.pipe(notify({
