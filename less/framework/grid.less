@@ -1,0 +1,23 @@
+.container {
+	max-width: @default-container-width;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/*
+	Columns
+ */
+
+[class^="column-"] {
+	float:left;
+}
+
+.generate-columns(12);
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  .column-@{i} {
+    width: (@i * 100% / @n);
+    width: calc(~'@{i} * 100% / @{n}')
+  }
+  .generate-columns(@n, (@i + 1));
+}
