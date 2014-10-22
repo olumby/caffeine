@@ -8,7 +8,9 @@ var gulp = require('gulp'),
 gulp.task('less', function() {
 	return gulp.src('less/caffeine.less')
 		.pipe(less())
-		.pipe(autoprefixer())
+		.pipe(autoprefixer({
+            cascade: true
+        }))
 		.pipe(gulp.dest(''))
 		.pipe(rename({
 			suffix: '.min'
