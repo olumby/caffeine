@@ -10,25 +10,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="caffeine.min.css" type="text/css">
+
+	<style type="text/css">
+
+		#colors ul { list-style-type:none; margin:0; padding:0; text-align:center; }
+		#colors ul li { display:inline-block; width:175px; padding:40px; margin:10px; }
+
+
+	</style>
+
 </head>
 <body>
 
-	<section class="introduction bg-olive white">
-		
+	<section id="introduction" class="bg-olive white">
+
 		<div class="container">
 			<h1 class="text-light">CaffeineCSS</h1>
 		</div>
 
 	</section>
 
-	<section class="bg-lightgrey">
+	<section id="grid" class="bg-lightgrey">
 
 		<div class="container">
 
 			<h2>Grid System</h2>
 
 			<p>The grid system works...</p>
-
 			<div class="row clearfix">
 				<div class="column-1 bg-blue padded white">
 					1
@@ -124,6 +132,143 @@
 					2
 				</div>
 			</div>
+		</div>
+
+	</section>
+
+	<section id="tables" class="bg-white">
+
+		<div class="container">
+			<h2>Tables</h2>
+
+			<table>
+				<thead>
+					<th>Column 1</th>
+					<th>Column 2</th>
+					<th>Column 3</th>
+					<th>Column 4</th>
+				</thead>
+				<tfoot>
+					<th>Column 1</th>
+					<th>Column 2</th>
+					<th>Column 3</th>
+					<th>Column 4</th>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>Content 1</td>
+						<td>Content 2</td>
+						<td>Content 3</td>
+						<td>Content 4</td>
+					</tr>
+					<tr>
+						<td>Content 1</td>
+						<td>Content 2</td>
+						<td>Content 3</td>
+						<td>Content 4</td>
+					</tr>
+					<tr>
+						<td>Content 1</td>
+						<td>Content 2</td>
+						<td>Content 3</td>
+						<td>Content 4</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</section>
+
+	<section id="forms" class="bg-lightgrey">
+
+		<div class="container">
+			<h2>Forms</h2>
+
+			<form class="clearfix">
+
+				<fieldset class="column-1-2">
+					<legend>Form Legend</legend>
+
+					<div class="row">
+						<label for="email">Email</label>
+						<input id="email" type="email" placeholder="Email">
+					</div>
+
+					<div class="row">
+						<label for="password">Password</label>
+						<input id="password" type="password" placeholder="Password">
+					</div>
+
+					<div class="row">
+						<label for="state">Selection Box</label>
+						<select id="state">
+							<option>Option #1</option>
+							<option>Option #2</option>
+							<option>Option #3</option>
+						</select>
+					</div>
+
+					<div class="row">
+						<textarea></textarea>
+					</div>
+
+					<div class="row">
+						<label for="checkbox" class="checkbox">
+							<input id="checkbox" type="checkbox"> Check me!
+						</label>
+					</div>
+
+					<div class="row">
+						<label for="first" class="radio">
+							<input id="first" type="radio"> First
+						</label>
+						<label for="second" class="radio">
+							<input id="second" type="radio"> Second
+						</label>
+					</div>
+
+					<div class="row">
+						<button type="submit" class="buttton">Sign in</button>
+					</div>
+				</fieldset>
+
+			</form>
+
+		</div>
+
+	</section>
+
+	<section id="colors" class="bg-white">
+
+		<div class="container">
+
+			<h2>Colors</h2>
+
+			<ul id="background">
+				<li class="bg-navy white">.bg-navy</li>
+				<li class="bg-blue black">.bg-blue</li>
+				<li class="bg-aqua black">.bg-aqua</li>
+				<li class="bg-lightblue black">.bg-lightblue</li>
+				<li class="bg-teal black">.bg-teal</li>
+				<li class="bg-olive black">.bg-olive</li>
+				<li class="bg-green black">.bg-green</li>
+				<li class="bg-lime black">.bg-lime</li>
+
+				<li class="bg-yellow black">.bg-yellow</li>
+				<li class="bg-orange black">.bg-orange</li>
+				<li class="bg-red black">.bg-red</li>
+				<li class="bg-maroon white">.bg-maroon</li>
+				<li class="bg-fuchsia black">.bg-fuchsia</li>
+				<li class="bg-purple black">.bg-purple</li>
+
+				<li class="bg-black white">.bg-black</li>
+				<li class="bg-darkgrey white">.bg-darkgrey</li>
+				<li class="bg-grey white">.bg-grey</li>
+				<li class="bg-silver black">.bg-silver</li>
+				<li class="bg-lightgrey black">.bg-lightgrey</li>
+				<li class="bg-white black">.bg-white</li>
+								
+			</ul>
 
 		</div>
 
