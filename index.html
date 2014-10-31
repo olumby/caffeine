@@ -134,12 +134,14 @@
 			</div>
 
 			<div class="row clearfix">
+				<p>Shown using different classes</p>
+
 				<div class="column-16 bg-navy white padded">
-					16
-					<div class="column-8 bg-blue white padded">
-						8
-						<div class="column-8 bg-lightblue black padded">
-							8
+					.column-16, bg-navy white padded
+					<div class="column-8 bg-blue white text-right">
+						.column-8, bg-blue white text-right
+						<div class="column-10 bg-lightblue black padded">
+							.column-8, bg-lightblue black padded
 						</div>
 					</div>
 				</div>
@@ -243,6 +245,20 @@
 					<div class="row">
 						<button type="submit" class="buttton">Sign in</button>
 					</div>
+				</fieldset>
+
+				<fieldset class="column-1-2">
+
+					<input id="email" type="email" placeholder="Email">
+					
+					<input id="password" type="password" placeholder="Password">
+					
+					<label for="checkbox" class="checkbox">
+						<input id="checkbox" type="checkbox"> Save
+					</label>
+
+					<input type="submit" class="button" value="Login">
+
 				</fieldset>
 
 			</form>
