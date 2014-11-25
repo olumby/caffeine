@@ -20,7 +20,7 @@
 .clearfix:after {
   clear: both;
 }
-.guterless {
+.gutterless {
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -46,14 +46,50 @@
 .text-light {
   font-weight: 300;
 }
+.text-light strong {
+  font-weight: 400;
+}
 .text-normal {
   font-weight: 400;
 }
 .text-bold {
   font-weight: 700;
 }
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
 * {
   box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+h1,
+.h1 {
+  font-size: 40px;
+}
+h2,
+.h2 {
+  font-size: 32px;
+}
+h3,
+.h3 {
+  font-size: 26px;
+}
+h4,
+.h4 {
+  font-size: 20px;
+}
+h5,
+.h5 {
+  font-size: 18px;
+}
+h6,
+.h6 {
+  font-size: 16px;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -690,4 +726,60 @@ th {
 .column-16 {
   width: 100%;
   width: calc(16 * 100% / 16);
+}
+form fieldset {
+  border: 0;
+  margin: 0;
+}
+form input,
+form textarea,
+form button {
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 1px;
+  margin: 4px 0;
+}
+table.notfull {
+  width: auto;
+}
+table {
+  width: 100%;
+}
+table,
+table th,
+table td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+table th {
+  text-align: left;
+  background: #f9f9f9;
+  font-weight: 400;
+}
+table td {
+  font-weight: 300;
+}
+.tabs .navigation ul {
+  margin: 20px 0 0;
+}
+.tabs .navigation a {
+  color: inherit;
+}
+.tabs .navigation .tab {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 10px 20px;
+  background: #efefef;
+}
+.tabs .navigation .tab:hover {
+  background: #F3F3F3;
+}
+.tabs .navigation .tab.active {
+  background: white;
+  border-bottom: 1px solid #0074d9;
+}
+.tabs .tab-content {
+  background: #ffffff;
+  padding: 20px;
 }
