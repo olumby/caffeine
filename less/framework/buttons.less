@@ -7,8 +7,8 @@
 	position: relative;
 	outline: none;
 	display: inline-block;
-	.line-height(@default-line-height);
-	.border-radius(2px);
+	line-height: @default-line-height;
+	border-radius: 2px;
 	&:hover {
 		background-color: @default-button-hover-color;
 	}
@@ -20,9 +20,9 @@
 		}
 	}
 	&.shadow {
-		.box-shadow(0 2px 0 rgba(0,0,0,.15));
+		box-shadow: 0 2px 0 rgba(0,0,0,.15);
 		&:active {
-			.box-shadow(0 1px 0 rgba(0,0,0,.15));
+			box-shadow: 0 1px 0 rgba(0,0,0,.15);
 		}
 	}
 	&:active {

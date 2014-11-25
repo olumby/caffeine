@@ -740,6 +740,39 @@ form button {
   border-radius: 1px;
   margin: 4px 0;
 }
+.button {
+  border: 0;
+  padding: 0.5em 1em;
+  background-color: #ff4136;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  outline: none;
+  display: inline-block;
+  line-height: 21;
+  border-radius: 2px;
+}
+.button:hover {
+  background-color: #ff5950;
+}
+.button:disabled,
+.button .disabled {
+  color: #999;
+  background-color: #f1f1f1;
+}
+.button:disabled:hover,
+.button .disabled:hover {
+  background-color: #f1f1f1;
+}
+.button.shadow {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+.button.shadow:active {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+.button:active {
+  top: 1px;
+}
 table.notfull {
   width: auto;
 }
