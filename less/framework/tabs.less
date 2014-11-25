@@ -1,0 +1,32 @@
+.tabs {
+
+	.navigation {
+		ul {
+			margin: 20px 0 0;
+		}
+		a {
+			color:inherit;
+		}
+		.tab {
+			cursor: pointer;
+			margin: 0 5px;
+			padding:10px 20px;
+			background: #efefef;
+
+			&:hover {
+				background:#F3F3F3;
+			}
+
+			&.active {
+				background: white;
+				border-bottom: 1px solid @blue;
+			}
+		}
+	}
+
+	.tab-content {
+		background: @white;
+		padding:20px;
+	}
+
+}
